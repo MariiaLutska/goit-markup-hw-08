@@ -1,0 +1,159 @@
+button {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hero__button {
+  @extend button;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--button-color);
+  background: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  margin: auto;
+  padding: 10px 32px;
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--focus-button-color);
+  }
+}
+
+.mailing__btn {
+  @extend button;
+
+  width: 200px;
+  height: 50px;
+  display: inline-flex;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: var(--button-color);
+  background-size: contain;
+  padding-left: 29px;
+  padding-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
+  &:focus {
+    background-color: var(--focus-button-color);
+  }
+}
+.filter__button {
+  @extend button;
+
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.filter__button--current {
+  color: var(--button-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.modal__button {
+  @extend button;
+
+  position: absolute;
+  flex-direction: row;
+  width: 30px;
+  height: 30px;
+  background-color: var(--modal-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: var(--title-color);
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    outline: none;
+    transition-property: background-color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--cubic);
+  }
+}
+
+.modal__button-icon--close {
+  fill: var(--title-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    outline: none;
+    transition-property: background-color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--cubic);
+    display: none;
+  }
+}
+
+.modal__btn-submit {
+  @extend button;
+
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--button-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin: auto;
+  padding: 10px 55px 10px 56px;
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
+  &:focus {
+    background-color: var(--focus-button-color);
+  }
+}

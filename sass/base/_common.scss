@@ -1,0 +1,25 @@
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--header-text-color);
+  background: var(--primary-title-color);
+}
+.navigation__list,
+.features__list,
+.team__list,
+.work__list,
+.footer-contacts__list,
+.filter__list,
+.project__list,
+.contacts,
+.team__social-list,
+.customers__item,
+.join__item {
+  list-style: none;
+  text-decoration: none;
+}

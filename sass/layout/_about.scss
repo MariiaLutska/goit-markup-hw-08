@@ -1,0 +1,89 @@
+.features {
+  background: var(--primary-title-color);
+  &__list {
+    justify-content: space-between;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--header-text-color);
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+  &__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    text-transform: none;
+    color: var(--main-text-color);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.features__item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% -3 * 30px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+    background: var(--team-background-color);
+    border-radius: 4px;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--team-background-color);
+  }
+  &.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+  }
+  &.icon-clock::before {
+    background-image: url(../images/clock.svg);
+  }
+  &.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+  }
+  &.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   flex-basis: calc((100% -3 * 30px) / 4);
+  //   .features__item:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
+  // }
+}
