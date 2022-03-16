@@ -79,11 +79,4 @@
   &.icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
   }
-
-  // @media screen and (min-width: 1200px) {
-  //   flex-basis: calc((100% -3 * 30px) / 4);
-  //   .features__item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
 }
