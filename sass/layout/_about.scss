@@ -8,11 +8,11 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--header-text-color);
-    @media screen and (min-width: 768px) {
+    @include table {
       display: flex;
       flex-wrap: wrap;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       display: flex;
       flex-wrap: nowrap;
     }
@@ -32,7 +32,7 @@
 
   &__title {
     margin-bottom: 10px;
-    @media screen and (min-width: 768px) {
+    @include table {
       text-align: left;
     }
   }
@@ -45,10 +45,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @include table {
     flex-basis: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc((100% -3 * 30px) / 4);
     &:not(:last-child) {
       margin-right: 30px;
