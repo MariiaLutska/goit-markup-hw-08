@@ -48,6 +48,9 @@
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-title-color);
   margin-bottom: 30px;
+  // @include tel {
+  //   width: 450px;
+  // }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);

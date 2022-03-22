@@ -125,7 +125,15 @@ img {
 }
 
 .work {
-  padding-top: 0;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: inline;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
 }
 
 button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__btn-submit {
@@ -496,6 +504,16 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-link.footer__logo {
+    display: inline-block;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
 .team__social-list {
   display: flex;
   justify-content: center;
@@ -674,7 +692,7 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
+    width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -814,6 +832,7 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 
 .work__list {
   display: flex;
+  padding-bottom: 94px;
 }
 
 .work__foto {
@@ -1059,8 +1078,10 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   padding-bottom: 60px;
 }
 
-.footer__address {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__list {

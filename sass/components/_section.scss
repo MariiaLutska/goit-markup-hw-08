@@ -8,5 +8,11 @@
   }
 }
 .work {
-  padding-top: 0;
+  display: none;
+
+  @include desktop {
+    display: inline;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
 }

@@ -5,7 +5,9 @@
 }
 
 .footer__address {
-  margin-right: 70px;
+  @include desktop {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts__list {
