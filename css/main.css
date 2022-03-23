@@ -62,7 +62,10 @@ img {
 .contacts,
 .team__social-list,
 .customers__item,
-.join__item {
+.join__item,
+.mob-contacts__list,
+.mob-social__list,
+.mob-menu__list {
   list-style: none;
   text-decoration: none;
 }
@@ -564,7 +567,7 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 }
 
 .navigation__list {
-  display: flex;
+  display: none;
 }
 
 .navigation__item {
@@ -612,10 +615,13 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 }
 
 .contacts {
-  display: flex;
   margin-left: auto;
   justify-content: space-between;
   align-items: center;
+}
+
+.contacts__list {
+  display: none;
 }
 
 .contacts__link {
@@ -664,6 +670,68 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   fill: var(--accent-color);
 }
 
+.menu-open-btn,
+.menu-close-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  outline: none;
+}
+
+.mob-menu {
+  position: absolute;
+  background-color: var(--primary-title-color);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mob-menu__item:not(:last-child),
+.mob-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+
+.mob-contacts__link__tel {
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.mob-contacts__link__mail {
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.mob-social-link {
+  display: flex;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.mob-social__item {
+  margin-top: 64px;
+}
+
 .hero {
   max-width: 100%;
   margin: 0 auto;
@@ -671,11 +739,17 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people_mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   flex-grow: 1;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people_mob_2x.jpg);
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -687,6 +761,13 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people_tab.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people_tab_2x.jpg);
   }
 }
 
@@ -695,6 +776,13 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
     width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people_2x.jpg);
   }
 }
 
