@@ -28,11 +28,16 @@
     line-height: 1.19;
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
+    // margin-right: 93px;
   }
 }
-
+// .logo-linl.header__logo {
+//   @include desktop {
+//     margin-right: 93px;
+//   }
+// }
 .logo-link.footer__logo {
+  margin-bottom: 20px;
   @include desktop {
     display: inline-block;
     justify-content: center;

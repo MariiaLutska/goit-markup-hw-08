@@ -22,7 +22,7 @@
     <header class="header">
       <div class="container">
         <nav class="navigation header__container">
-          <a class="logo logo-link" href="/"
+          <a class="logo logo-link header__logo" href="/"
             >Web<span class="logo-link logo-link--light-theme">Studio</span></a
           >
           <ul class="navigation__list">
@@ -54,21 +54,22 @@
             </li>
           </ul>
 
-          <button type="button" class="menu-open-btn">
+          <button type="button" class="menu-open-btn" data-menu-open>
             <svg class="menu-btn" width="18.67" height="18.67">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
         </nav>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" data-menu>
         <div class="container">
-          <button type="button" class="menu-close-btn">
-            <svg class="menu-btn" width="18.67" height="18.67">
-              <use href="./images/icons.svg#icon-close1"></use>
-            </svg>
-          </button>
           <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="menu-btn" width="18.67" height="18.67">
+                <use href="./images/icons.svg#icon-close1"></use>
+              </svg>
+            </button>
+
             <ul class="mob-menu__list">
               <li class="mob-menu__item">
                 <a href="./index.html" class="mob-menu__link">Студия</a>
@@ -97,13 +98,16 @@
 
             <ul class="mob-social__list">
               <li class="mob-social__item">
-                <a href="" class="mob-social-link">Instagram</a>
+                <a href="" class="mob-social-link">Instagram</a
+                ><span class="line">|</span>
               </li>
               <li class="mob-social__item">
-                <a href="" class="mob-social-link">Twitter</a>
+                <a href="" class="mob-social-link">Twitter</a
+                ><span class="line">|</span>
               </li>
               <li class="mob-social__item">
-                <a href="" class="mob-social-link">Facebook</a>
+                <a href="" class="mob-social-link">Facebook</a
+                ><span class="line">|</span>
               </li>
               <li class="mob-social__item">
                 <a href="" class="mob-social-link">LinkedIn</a>
@@ -480,78 +484,82 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
-          <a class="logo-link footer__logo" href="/"
-            >Web<span class="logo-link logo-link--dark-theme">Studio</span></a
-          >
-          <!-- <address>
-            <ul class="footer-contacts footer-contacts__list">
-              <li class="footer-contacts__item">
-                г. Киев, пр-т Леси Украинки, 26
+        <div class="footer-top">
+          <div class="footer__address">
+            <a class="logo-link footer__logo" href="/"
+              >Web<span class="logo-link logo-link--dark-theme">Studio</span></a
+            >
+            <address>
+              <ul class="footer-contacts footer-contacts__list">
+                <li class="footer-contacts__item">
+                  г. Киев, пр-т Леси Украинки, 26
+                </li>
+                <li class="footer-contacts__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer-contacts__link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a href="tel:+380991111111" class="footer-contacts__link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__text">присоединяйтесь</p>
+            <ul class="join__list">
+              <li class="join__item">
+                <a href="" class="join__social-link social-link">
+                  <svg
+                    class="join__social-icon social-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
-                <a href="mailto:info@example.com" class="footer-contacts__link"
-                  >info@example.com</a
-                >
+              <li class="join__item">
+                <a href="" class="join__social-link social-link">
+                  <svg
+                    class="join__social-icon social-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
-                <a href="tel:+380991111111" class="footer-contacts__link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="join__item">
+                <a href="" class="join__social-link social-link">
+                  <svg
+                    class="join__social-icon social-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a href="" class="join__social-link social-link">
+                  <svg
+                    class="join__social-icon social-icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address> -->
+          </div>
         </div>
-        <!-- <div class="join">
-          <p class="join__text">присоединяйтесь</p>
-          <ul class="join__list">
-            <li class="join__item">
-              <a href="" class="join__social-link social-link">
-                <svg
-                  class="join__social-icon social-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__social-link social-link">
-                <svg
-                  class="join__social-icon social-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__social-link social-link">
-                <svg
-                  class="join__social-icon social-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__social-link social-link">
-                <svg
-                  class="join__social-icon social-icon"
-                  width="20"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div> -->
-        <!-- <div class="mailing mailing__list">
+        <div class="mailing mailing__list">
           <p class="mailing__title">Подпишитесь на рассылку</p>
           <form class="form">
             <label class="form__email">
@@ -569,7 +577,7 @@
               </svg>
             </button>
           </form>
-        </div> -->
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -659,5 +667,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -19,10 +19,20 @@
 .header__container {
   display: flex;
   align-items: center;
+  @include table {
+    justify-content: space-between;
+  }
+  @include desktop {
+    justify-content: start;
+  }
 }
 .footer__container {
-  //   // display: flex;
-  //   // align-items: baseline;
   justify-content: center;
   text-align: center;
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
