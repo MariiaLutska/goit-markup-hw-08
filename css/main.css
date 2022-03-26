@@ -122,8 +122,6 @@ img {
 }
 
 .container-menu {
-  width: 100%;
-  height: 100%;
   padding: 48px 40px;
   margin: 0 auto;
   justify-content: flex-start;
@@ -826,9 +824,15 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   flex-direction: column;
 }
 
-.menu-page {
+.menu {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .mob-menu__item:not(:last-child),

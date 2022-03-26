@@ -204,9 +204,12 @@
     // justify-content: space-between;
   }
 }
-.menu-page {
+.menu {
   display: flex;
   flex-direction: column;
+  @include table {
+    display: none;
+  }
 }
 
 .mob-menu__item,
