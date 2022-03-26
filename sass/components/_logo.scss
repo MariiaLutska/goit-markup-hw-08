@@ -31,11 +31,11 @@
     // margin-right: 93px;
   }
 }
-// .logo-linl.header__logo {
-//   @include desktop {
-//     margin-right: 93px;
-//   }
-// }
+.header__logo {
+  @include desktop {
+    margin-right: 93px;
+  }
+}
 .logo-link.footer__logo {
   margin-bottom: 20px;
   @include desktop {

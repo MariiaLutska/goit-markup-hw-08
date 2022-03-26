@@ -85,6 +85,7 @@
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
+    overflow-y: hidden;
   }
 }
 .modal__form-field {
@@ -104,7 +105,8 @@
   transition-property: border-color, fill;
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
-  &:focus {
+  &:focus,
+  &:hover {
     border-color: var(--accent-color);
   }
 }
