@@ -817,6 +817,7 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   height: 100vh;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .mob-menu .container {
