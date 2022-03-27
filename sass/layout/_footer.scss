@@ -4,6 +4,7 @@
   padding-bottom: 60px;
 }
 .footer-top {
+  margin-bottom: 60px;
   @include table {
     display: flex;
     justify-content: space-between;
@@ -16,6 +17,10 @@
   }
 }
 .footer__address {
+  margin-bottom: 60px;
+  @include table {
+    margin-bottom: 0;
+  }
   @include desktop {
     margin-right: 70px;
   }
@@ -24,7 +29,6 @@
 .footer-contacts__list {
   color: var(--footer-contacts-color);
   margin-top: 20px;
-  margin-bottom: 60px;
 
   @include desktop {
     margin-bottom: 0;
@@ -84,7 +88,7 @@
   }
 }
 .join__list {
-  margin-bottom: 60px;
+
   @include desktop {
     margin-bottom: 0;
   }
@@ -138,6 +142,7 @@
   @include desktop {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 

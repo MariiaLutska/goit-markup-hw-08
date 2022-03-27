@@ -11,8 +11,8 @@
   display: none;
 
   @include desktop {
-    display: inline;
+    display: block;
     padding-top: 0;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }

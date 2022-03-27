@@ -1,8 +1,6 @@
 .features {
   background: var(--primary-title-color);
   &__list {
-    justify-content: space-between;
-
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -11,6 +9,7 @@
     @include table {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     @include desktop {
       display: flex;
@@ -21,7 +20,6 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -45,10 +43,18 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @include table {
     flex-basis: calc((100% - 30px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
   @include desktop {
+    margin-bottom: 0;
     flex-basis: calc((100% -3 * 30px) / 4);
     &:not(:last-child) {
       margin-right: 30px;

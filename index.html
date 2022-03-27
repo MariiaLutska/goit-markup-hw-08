@@ -38,14 +38,14 @@
           </ul>
 
           <ul class="contacts contacts__list">
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item-mail">
               <a href="" class="contacts__link">
                 <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope-hover"></use></svg
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item-tel">
               <a href="" class="contacts__link">
                 <svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
@@ -59,7 +59,7 @@
             class="menu-open-btn is-open"
             aria-label="opem menu"
             aria-expanded="false"
-            open-menu
+            data-menu-open
           >
             <svg class="menu-btn" width="18.67" height="18.67">
               <use href="./images/icons.svg#icon-menu"></use>
@@ -67,14 +67,14 @@
           </button>
         </nav>
       </div>
-      <div class="menu mob-menu is-hidden" menu-mobile>
+      <div class="menu mob-menu is-hidden" data-menu>
         <div class="container container-menu">
           <button
             type="button"
             class="button menu-close-btn is-open"
             aria-label="close menu"
             aria-expanded="true"
-            close-menu
+            data-menu-close
           >
             <svg class="menu-btn" width="18.67" height="18.67">
               <use href="./images/icons.svg#icon-close1"></use>
@@ -84,7 +84,9 @@
             <div class="mob-menu-top">
               <ul class="mob-menu__list">
                 <li class="mob-menu__item">
-                  <a href="./index.html" class="mob-menu__link">Студия</a>
+                  <a href="./index.html" class="mob-menu__link current"
+                    >Студия</a
+                  >
                 </li>
                 <li class="mob-menu__item">
                   <a href="./portfolio.html" class="mob-menu__link"
@@ -184,53 +186,54 @@
           <h2 class="work__name">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__foto">
-              <picture>
-                <source
-                  srcset="./images/img1.jpg 1x, ./images/img1_2x-min.jpg 2x"
-                  media="(min-widht:
-                1200px)"
-                />
-              </picture>
               <div class="work__wrap">
-                <img
-                  src="./images/img1.jpg"
-                  alt="десктопное приложение"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img1.jpg 1x, ./images/img1_2x-min.jpg 2x"
+                    media="(min-widht:
+                1200px)"
+                  />
+
+                  <img
+                    src="./images/img1.jpg"
+                    alt="десктопное приложение"
+                    width="370"
+                  />
+                </picture>
                 <p class="work__title">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__foto">
-              <picture>
-                <source
-                  srcset="./images/img2.jpg 1x, ./images/img2_2x-min.jpg 2x"
-                  media="(min-widht:
-                1200px)"
-                />
-              </picture>
               <div class="work__wrap">
-                <img
-                  src="./images/img2.jpg"
-                  alt="мобильное приложение"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img2.jpg 1x, ./images/img2_2x-min.jpg 2x"
+                    media="(min-widht:
+                1200px)"
+                  />
+                  <img
+                    src="./images/img2.jpg"
+                    alt="мобильное приложение"
+                    width="370"
+                  />
+                </picture>
                 <p class="work__title">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__foto">
-              <picture>
-                <source
-                  srcset="./images/img3.jpg 1x, ./images/img3_2x-min.jpg 2x"
-                  media="(min-widht:
-                1200px)"
-                />
-              </picture>
               <div class="work__wrap">
-                <img
-                  src="./images/img3.jpg"
-                  alt="дизайнерское решение"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img3.jpg 1x, ./images/img3_2x-min.jpg 2x"
+                    media="(min-widht:
+                1200px)"
+                  />
+                  <img
+                    src="./images/img3.jpg"
+                    alt="дизайнерское решение"
+                    width="370"
+                  />
+                </picture>
                 <p class="work__title">Дизайнерские решения</p>
               </div>
             </li>
@@ -266,8 +269,13 @@
                   "
                   media="(min-width: 480px)"
                 />
+
+                <img
+                  src="./images/ProductDesigner.jpg"
+                  alt="фото"
+                  width="270"
+                />
               </picture>
-              <img src="./images/ProductDesigner.jpg" alt="фото" width="270" />
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__profession" lang="en">Product Designer</p>
@@ -328,28 +336,25 @@
                     ./images/FrontendDeveloper_2x-min.jpg 2x
                   "
                   media="(min-widht:
-                1200px)"
-                />
+                1200px)" />
                 <source
                   srcset="
                     ./images/FrontendDeveloper_tab-min.jpg    1x,
                     ./images/FrontendDeveloper_tab_2x-min.jpg 2x
                   "
-                  media="(min-width: 768px)"
-                />
+                  media="(min-width: 768px)" />
                 <source
                   srcset="
                     ./images/FrontendDeveloper_mob-min.jpg    1x,
                     ./images/FrontendDeveloper_mob_2x-min.jpg 2x
                   "
-                  media="(min-width: 480px)"
-                />
-              </picture>
-              <img
-                src="./images/FrontendDeveloper.jpg"
-                alt="фото"
-                width="270"
-              />
+                  media="(min-width: 480px)" />
+
+                <img
+                  src="./images/FrontendDeveloper.jpg"
+                  alt="фото"
+                  width="270"
+              /></picture>
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__profession" lang="en">Frontend Developer</p>
@@ -410,24 +415,22 @@
                     ./images/Marketing_2x.jpg 2x
                   "
                   media="(min-widht:
-                  1200px)"
-                />
+                  1200px)" />
                 <source
                   srcset="
                     ./images/Marketing_tab-min.jpg    1x,
                     ./images/Marketing_tab_2x-min.jpg 2x
                   "
-                  media="(min-width: 768px)"
-                />
+                  media="(min-width: 768px)" />
                 <source
                   srcset="
                     ./images/Marketing_mob-min.jpg    1x,
                     ./images/Marketing_mob_2x-min.jpg 2x
                   "
-                  media="(min-width: 480px)"
-                />
-              </picture>
-              <img src="./images/Marketing.jpg" alt="фото" width="270" />
+                  media="(min-width: 480px)" />
+
+                <img src="./images/Marketing.jpg" alt="фото" width="270"
+              /></picture>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__profession" lang="en">Marketing</p>
@@ -488,24 +491,22 @@
                     ./images/UIDesigner_2x-min.jpg 2x
                   "
                   media="(min-widht:
-                  1200px)"
-                />
+                  1200px)" />
                 <source
                   srcset="
                     ./images/UIDesigner_tab-min.jpg    1x,
                     ./images/UIDesigner_tab_2x-min.jpg 2x
                   "
-                  media="(min-width: 768px)"
-                />
+                  media="(min-width: 768px)" />
                 <source
                   srcset="
                     ./images/UIDesigner_mob-min.jpg    1x,
                     ./images/UIDesigner_mob_2x-min.jpg 2x
                   "
-                  media="(min-width: 480px)"
-                />
-              </picture>
-              <img src="./images/UIDesigner.jpg" alt="фото" width="270" />
+                  media="(min-width: 480px)" />
+
+                <img src="./images/UIDesigner.jpg" alt="фото" width="270"
+              /></picture>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__profession" lang="en">UI Designer</p>
@@ -638,6 +639,7 @@
               </ul>
             </address>
           </div>
+          
           <div class="join">
             <p class="join__text">присоединяйтесь</p>
             <ul class="join__list">

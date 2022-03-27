@@ -1,6 +1,6 @@
 .logo-link {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
   margin-bottom: 0;
   font-family: 'Raleway';
   font-style: normal;
@@ -32,12 +32,24 @@
   }
 }
 .header__logo {
+    padding-top: 16px;
+  padding-bottom: 16px;
   @include desktop {
     margin-right: 93px;
   }
 }
-.logo-link.footer__logo {
-  margin-bottom: 20px;
+// .logo-link.footer__logo {
+//   margin-bottom: 20px;
+//   @include desktop {
+//     display: inline-block;
+//     justify-content: center;
+//     padding: 0;
+//     margin-bottom: 20px;
+//     margin-right: 0;
+//   }
+// }
+.footer__logo {
+margin-bottom: 20px;
   @include desktop {
     display: inline-block;
     justify-content: center;

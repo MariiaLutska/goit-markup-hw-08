@@ -61,7 +61,7 @@
             class="menu-open-btn is-open"
             aria-label="opem menu"
             aria-expanded="false"
-            open-menu
+            data-menu-open
           >
             <svg class="menu-btn" width="18.67" height="18.67">
               <use href="./images/icons.svg#icon-menu"></use>
@@ -69,14 +69,14 @@
           </button>
         </nav>
       </div>
-      <div class="menu mob-menu is-hidden" menu-mobile>
+      <div class="menu mob-menu is-hidden" data-menu>
         <div class="container container-menu">
           <button
             type="button"
             class="button menu-close-btn is-open"
             aria-label="close menu"
             aria-expanded="true"
-            close-menu
+            data-menu-close
           >
             <svg class="menu-btn" width="18.67" height="18.67">
               <use href="./images/icons.svg#icon-close1"></use>
@@ -89,7 +89,7 @@
                   <a href="./index.html" class="mob-menu__link">Студия</a>
                 </li>
                 <li class="mob-menu__item">
-                  <a href="./portfolio.html" class="mob-menu__link"
+                  <a href="./portfolio.html" class="mob-menu__link current"
                     >Портфолио</a
                   >
                 </li>
@@ -114,16 +114,13 @@
 
               <ul class="mob-social__list">
                 <li class="mob-social__item">
-                  <a href="" class="mob-social-link">Instagram</a
-                  ><span class="line">|</span>
+                  <a href="" class="mob-social-link">Instagram</a>
                 </li>
                 <li class="mob-social__item">
-                  <a href="" class="mob-social-link">Twitter</a
-                  ><span class="line">|</span>
+                  <a href="" class="mob-social-link">Twitter</a>
                 </li>
                 <li class="mob-social__item">
-                  <a href="" class="mob-social-link">Facebook</a
-                  ><span class="line">|</span>
+                  <a href="" class="mob-social-link">Facebook</a>
                 </li>
                 <li class="mob-social__item">
                   <a href="" class="mob-social-link">LinkedIn</a>
@@ -163,37 +160,38 @@
           </ul>
           <ul class="project project__list">
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/tehnokrjak.jpg        1x,
-                    ./images/tehnokrjak_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tehnokrjak_tab-min.jpg    1x,
-                    ./images/tehnokrjak_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/tehnokrjak_mob-min.jpg    1x,
-                    ./images/tehnokrjak_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/tehnokrjak.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/tehnokrjak.jpg        1x,
+                        ./images/tehnokrjak_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tehnokrjak_tab-min.jpg    1x,
+                        ./images/tehnokrjak_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tehnokrjak_mob-min.jpg    1x,
+                        ./images/tehnokrjak_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/tehnokrjak.jpg"
+                      alt="Технокряк"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -208,37 +206,37 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/poster_new_orlean_vs_golden_star.jpg        1x,
-                    ./images/poster_new_orlean_vs_golden_star_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/poster_new_orlean_vs_golden_star_tab-min.jpg    1x,
-                    ./images/poster_new_orlean_vs_golden_star_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/poster_new_orlean_vs_golden_star_mob-min.jpg    1x,
-                    ./images/poster_new_orlean_vs_golden_star_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/poster_new_orlean_vs_golden_star.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/poster_new_orlean_vs_golden_star.jpg        1x,
+                        ./images/poster_new_orlean_vs_golden_star_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster_new_orlean_vs_golden_star_tab-min.jpg    1x,
+                        ./images/poster_new_orlean_vs_golden_star_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster_new_orlean_vs_golden_star_mob-min.jpg    1x,
+                        ./images/poster_new_orlean_vs_golden_star_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/poster_new_orlean_vs_golden_star.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                    />
+                  </picture>
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -255,37 +253,38 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/restoran_seafood.jpg        1x,
-                    ./images/restoran_seafood_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/restoran_seafood_tab-min.jpg    1x,
-                    ./images/restoran_seafood_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/restoran_seafood_mob-min.jpg    1x,
-                    ./images/restoran_seafood_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/restoran_seafood.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/restoran_seafood.jpg        1x,
+                        ./images/restoran_seafood_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restoran_seafood_tab-min.jpg    1x,
+                        ./images/restoran_seafood_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restoran_seafood_mob-min.jpg    1x,
+                        ./images/restoran_seafood_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/restoran_seafood.jpg"
+                      alt="Ресторан Seafood"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -302,37 +301,38 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/project_prime.jpg        1x,
-                    ./images/project_prime_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/project_prime_tab-min.jpg    1x,
-                    ./images/project_prime_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/project_prime_mob-min.jpg    1x,
-                    ./images/project_prime_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/project_prime.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_prime.jpg        1x,
+                        ./images/project_prime_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_prime_tab-min.jpg    1x,
+                        ./images/project_prime_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_prime_mob-min.jpg    1x,
+                        ./images/project_prime_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/project_prime.jpg"
+                      alt="Проект Prime"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -349,37 +349,37 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/project_boxes.jpg        1x,
-                    ./images/project_boxes_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/project_boxes_tab-min.jpg    1x,
-                    ./images/project_boxes_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/project_boxes_mob-min.jpg    1x,
-                    ./images/project_boxes_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/project_boxes.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_boxes.jpg        1x,
+                        ./images/project_boxes_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_boxes_tab-min.jpg    1x,
+                        ./images/project_boxes_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_boxes_mob-min.jpg    1x,
+                        ./images/project_boxes_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/project_boxes.jpg"
+                      alt="Проект Boxes"
+                      width="370"
+                    />
+                  </picture>
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -396,37 +396,37 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/inspiration_has_no_borders.jpg        1x,
-                    ./images/inspiration_has_no_borders_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/inspiration_has_no_borders_tab-min.jpg    1x,
-                    ./images/inspiration_has_no_borders_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/inspiration_has_no_borders_mob-min.jpg    1x,
-                    ./images/inspiration_has_no_borders_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/inspiration_has_no_borders.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration_has_no_borders.jpg        1x,
+                        ./images/inspiration_has_no_borders_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration_has_no_borders_tab-min.jpg    1x,
+                        ./images/inspiration_has_no_borders_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration_has_no_borders_mob-min.jpg    1x,
+                        ./images/inspiration_has_no_borders_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/inspiration_has_no_borders.jpg"
+                      alt="Inspiration has no Borders"
+                      width="370"
+                    />
+                  </picture>
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -441,37 +441,37 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/limited_edition.jpg        1x,
-                    ./images/limited_edition_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/limited_edition_tab-min.jpg    1x,
-                    ./images/limited_edition_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/limited_edition_mob-min.jpg    1x,
-                    ./images/limited_edition_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/limited_edition.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/limited_edition.jpg        1x,
+                        ./images/limited_edition_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited_edition_tab-min.jpg    1x,
+                        ./images/limited_edition_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/limited_edition_mob-min.jpg    1x,
+                        ./images/limited_edition_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/limited_edition.jpg"
+                      alt="Издание Limited Edition"
+                      width="370"
+                    />
+                  </picture>
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -488,37 +488,37 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/project_lab.jpg        1x,
-                    ./images/project_lab_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/project_lab_tab-min.jpg    1x,
-                    ./images/project_lab_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/project_lab_mob-min.jpg    1x,
-                    ./images/project_lab_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/project_lab.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project_lab.jpg        1x,
+                        ./images/project_lab_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_lab_tab-min.jpg    1x,
+                        ./images/project_lab_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project_lab_mob-min.jpg    1x,
+                        ./images/project_lab_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/project_lab.jpg"
+                      alt="Проект LAB"
+                      width="370"
+                    />
+                  </picture>
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -535,37 +535,37 @@
             </li>
 
             <li class="project__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/growing_business.jpg        1x,
-                    ./images/growing_business_2x-min.jpg 2x
-                  "
-                  media="(min-widht:
-                1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/growing_business_tab-min.jpg    1x,
-                    ./images/growing_business_tab_2x-min.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/growing_business_mob-min.jpg    1x,
-                    ./images/growing_business_mob_2x-min.jpg 2x
-                  "
-                  media="(min-width: 480px)"
-                />
-              </picture>
               <a href="" class="project__link">
                 <div class="project__wrap">
-                  <img
-                    src="./images/growing_business.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growing_business.jpg        1x,
+                        ./images/growing_business_2x-min.jpg 2x
+                      "
+                      media="(min-widht:
+                1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing_business_tab-min.jpg    1x,
+                        ./images/growing_business_tab_2x-min.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growing_business_mob-min.jpg    1x,
+                        ./images/growing_business_mob_2x-min.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/growing_business.jpg"
+                      alt="Growing Business"
+                      width="370"
+                    />
+                  </picture>
                   <p class="project__bottom project__bottom--text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для

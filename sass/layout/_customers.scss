@@ -18,9 +18,14 @@
 .customers__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   align-items: center;
+
+  @include tel {
+    justify-content: space-between;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
@@ -30,6 +35,9 @@
 .customers__item {
   margin-bottom: 30px;
   flex-basis: calc((100% - 30px) / 2);
+  &:last-child {
+    margin-bottom: 0;
+  }
   @include tel {
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;

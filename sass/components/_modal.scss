@@ -137,18 +137,21 @@
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   &::before {
     content: '';
-    width: 12px;
-    height: 11px;
+    width: 16px;
+    height: 15px;
     border: 2px solid var(--header-text-color);
     border-radius: 2px;
-    display: block;
     margin-right: 7px;
     cursor: pointer;
+    display: inline-block;
+    @include tel {
+      display: block;
+    }
   }
   .modal__check:focus + &::before {
     border-color: var(--accent-color);
@@ -158,6 +161,9 @@
     background-origin: border-box;
     background-size: contain;
     border-color: var(--accent-color);
+  }
+  @include tel {
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;

@@ -41,23 +41,6 @@
   }
 }
 
-.current {
-  color: var(--accent-color);
-  &::after {
-    content: '';
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
-}
-
 .contacts {
   margin-left: auto;
   justify-content: space-between;
@@ -74,13 +57,13 @@
   display: none;
   @include table {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    // padding-top: 21px;
+    // padding-bottom: 21px;
   }
   @include desktop {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
   }
 }
 .contacts__link {
@@ -110,7 +93,24 @@
     letter-spacing: 0.02em;
   }
 }
-
+.contacts__item-mail {
+  @include table {
+  padding-top: 21px;
+}
+@include desktop {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+}
+.contacts__item-tel {
+  @include table {
+  padding-bottom: 21px;
+}
+@include desktop {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+}
 .contacts__item {
   @include desktop {
     display: flex;
@@ -194,6 +194,8 @@
   top: 0;
   left: 0;
   z-index: 1;
+  transition: opacity var(--duration), visibility var(--duration),
+    pointer-events var(--duration);
   // padding-top: 48px;
   // padding-bottom: 48px;
   // transform: translateX(-100%);
@@ -219,6 +221,7 @@
   }
 }
 .mob-menu__link {
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -231,14 +234,19 @@
   }
 }
 .mob-contacts__link__tel {
-  font-size: 34px;
+  font-weight: 500;
+  font-size: 7vw;
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
 
   color: var(--accent-color);
+  @include tel {
+    font-size: 34px;
+  }
 }
 .mob-contacts__link__mail {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -248,10 +256,12 @@
 }
 .mob-social__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   margin-top: 64px;
 }
 .mob-social-link {
+  font-weight: 500;
   text-align: center;
   font-size: 18px;
   line-height: 1.22;
@@ -272,4 +282,20 @@
 .is-open {
   opacity: 1;
   visibility: visible;
+}
+.current {
+  color: var(--accent-color);
+  &::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
