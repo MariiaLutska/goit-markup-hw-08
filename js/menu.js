@@ -1,8 +1,8 @@
         (() => {
                 const refs = {
-                    openMenuBtn: document.querySelector("[open-menu]"),
-                    closeMenuBtn: document.querySelector("[close-menu]"),
-                    menu: document.querySelector("[menu-mobile]"),
+                    openMenuBtn: document.querySelector("[data-menu-open]"),
+                    closeMenuBtn: document.querySelector("[data-menu-close]"),
+                    menu: document.querySelector("[data-menu]"),
                 };
 
                 refs.openMenuBtn.addEventListener("click", toggleMenu);

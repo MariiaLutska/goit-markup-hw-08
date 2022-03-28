@@ -874,7 +874,11 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
+  position: relative;
   color: var(--header-text-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
 }
 
 .mob-menu__link:hover, .mob-menu__link:focus {
@@ -951,6 +955,10 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
+}
+
+.mob-menu__link--current {
+  color: var(--accent-color);
 }
 
 .hero {

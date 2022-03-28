@@ -23,7 +23,6 @@
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-
   position: relative;
 
   font-weight: 500;
@@ -236,11 +235,17 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 
+  position: relative;
+
   color: var(--header-text-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+ 
 }
 .mob-contacts__link__tel {
   font-weight: 500;
@@ -307,4 +312,8 @@
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+}
+
+.mob-menu__link--current {
+  color: var(--accent-color);
 }
