@@ -92,6 +92,10 @@
 
     letter-spacing: 0.02em;
   }
+  // @include desktop {
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  // }
 }
 .contacts__item-mail {
   @include table {
@@ -212,6 +216,11 @@
   @include table {
     display: none;
   }
+}
+.menu-page {
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: -10px;
 }
 
 .mob-menu__item,
