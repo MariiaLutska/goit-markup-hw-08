@@ -96,7 +96,7 @@
   //   padding-bottom: 32px;
   // }
 }
-.contacts__item-mail {
+.contacts__link-mail {
   @include table {
   padding-top: 21px;
 }
@@ -105,7 +105,7 @@
   padding-bottom: 32px;
 }
 }
-.contacts__item-tel {
+.contacts__link-tel {
   @include table {
   padding-bottom: 21px;
 }

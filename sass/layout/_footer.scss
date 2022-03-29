@@ -8,6 +8,7 @@
   @include table {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding-left: 61px;
     padding-right: 74px;
   }
@@ -84,7 +85,7 @@
   color: var(--footer-contacts-color);
   @include desktop {
     margin-right: auto;
-    padding-top: 12px;
+    // padding-top: 12px;
   }
 }
 .join__list {
