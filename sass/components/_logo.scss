@@ -1,6 +1,4 @@
 .logo-link {
-  // padding-top: 16px;
-  // padding-bottom: 16px;
   margin-bottom: 0;
   font-family: 'Raleway';
   font-style: normal;
@@ -19,37 +17,30 @@
   &--dark-theme {
     color: var(--logo-two-color);
   }
+
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include desktop {
+    margin-right: 93px;
+  }
   @include table {
     padding-top: 26px;
     padding-bottom: 26px;
   }
   @include desktop {
-    font-size: 26px;
-    line-height: 1.19;
     padding-top: 24px;
     padding-bottom: 25px;
-    // margin-right: 93px;
   }
 }
-.header__logo {
-    padding-top: 16px;
-  padding-bottom: 16px;
-  @include desktop {
-    margin-right: 93px;
-  }
-}
-// .logo-link.footer__logo {
-//   margin-bottom: 20px;
-//   @include desktop {
-//     display: inline-block;
-//     justify-content: center;
-//     padding: 0;
-//     margin-bottom: 20px;
-//     margin-right: 0;
-//   }
-// }
+
 .footer__logo {
-margin-bottom: 20px;
+  margin-bottom: 20px;
   @include desktop {
     display: inline-block;
     justify-content: center;

@@ -112,7 +112,6 @@ button {
 
   &:hover,
   &:focus {
-    // background-color: var(--accent-color);
     outline: none;
     transition-property: background-color;
     transition-duration: var(--duration);
@@ -129,7 +128,6 @@ button {
     transition-property: background-color;
     transition-duration: var(--duration);
     transition-timing-function: var(--cubic);
-    // display: none;
   }
 }
 

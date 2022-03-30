@@ -72,7 +72,6 @@
 .join__text {
   font-weight: bold;
   font-size: 14px;
-  // line-height: 1.15;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -85,11 +84,9 @@
   color: var(--footer-contacts-color);
   @include desktop {
     margin-right: auto;
-    // padding-top: 12px;
   }
 }
 .join__list {
-
   @include desktop {
     margin-bottom: 0;
   }

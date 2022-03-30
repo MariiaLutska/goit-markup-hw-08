@@ -531,19 +531,10 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   color: var(--logo-two-color);
 }
 
-@media screen and (min-width: 768px) {
-  .logo-link {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo-link {
     font-size: 26px;
     line-height: 1.19;
-    padding-top: 24px;
-    padding-bottom: 25px;
   }
 }
 
@@ -555,6 +546,20 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -1327,7 +1332,7 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 
 .customers__item {
   margin: 15px;
-  flex-basis: calc((100% - 30px *2) / 2);
+  flex-basis: calc((100% - 30px * 2) / 2);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1650,12 +1655,6 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .project__list {
-    justify-content: center;
-  }
-}
-
 .project__item {
   margin-bottom: 30px;
   width: 100%;
@@ -1685,7 +1684,7 @@ button, .hero__button, .mailing__btn, .filter__button, .modal__button, .modal__b
 
 @media screen and (min-width: 1200px) {
   .project__item {
-    flex-basis: calc((100% - 4 * 30px) / 3);
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
 
